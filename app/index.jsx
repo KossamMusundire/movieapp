@@ -12,10 +12,10 @@ const app = () => {
     resizeMode='cover' style={styles.image}>
       <Text style ={styles.title}>Coffee Shop</Text>
 
-      <Link href="/explore" style={{marginHorizontal:`auto`}} 
+      <Link href="/contact" style={{marginHorizontal:`auto`}} 
       asChild>
         <Pressable style={styles.button}>
-          <Text styles ={styles.buttonText}>Explore</Text></Pressable>
+          <Text styles ={styles.buttonText}>Contact Us</Text></Pressable>
       
         </Link>
 
