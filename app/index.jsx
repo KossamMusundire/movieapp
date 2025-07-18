@@ -1,13 +1,17 @@
 import { View, Text,StyleSheet ,ImageBackground } from 'react-native'
 import React from 'react'
-import icedCofee from '@./assets/iced-coffee.jpg'
+import { Link } from 'expo-router'  
+
+import icedCoffeeImg from "@/assets/images/iced-coffee.png"
+
 
 const app = () => {
   return (
     <View style={styles.container}>
-    <ImageBackground source={icedCofee}
-    resizeMode='cover'>
-      <Text style ={styles.container}>Coffee Shop</Text>
+    <ImageBackground source={icedCoffeeImg}
+    resizeMode='cover' style={styles.image}>
+      <Text style ={styles.title}>Coffee Shop</Text>
+      <Link href="/explore" style={styles.link} >Explore</Link>
       </ImageBackground>
     </View>
   )
@@ -23,11 +27,26 @@ const styles = StyleSheet.create({
     height: '100%',
     flex: 1,
     justifyContent: 'center',
+    resizeMode: 'cover',
+
   },
-  text: {
+  title: {
     fontSize: 42,
     color: 'white',
-    fontWeight:'bold'}
+    fontWeight:'bold',
+    textAlign: 'center',
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    marginBottom: 120,
+  },
+  link: {
+    fontSize: 42,
+    color: 'white',
+    fontWeight:'bold',
+    textAlign: 'center',
+    textDecorationLine: 'underline',
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    padding: 4,
+  }
 
 
 })
