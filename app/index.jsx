@@ -25,23 +25,23 @@ const app = () => {
   )
 }
 
-export default app
+export default app; // Assuming 'app' is defined elsewhere as your component
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-  flexDirection: 'column',},
+    flexDirection: 'column',
+  },
   image: {
-    widthd: '100%',
+    width: '100%', // Fixed: changed 'widthd' to 'width'
     height: '100%',
     flex: 1,
     justifyContent: 'center',
     resizeMode: 'cover',
-
   },
   title: {
     fontSize: 42,
     color: 'white',
-    fontWeight:'bold',
+    fontWeight: 'bold',
     textAlign: 'center',
     backgroundColor: 'rgba(0, 0, 0, 0.5)',
     marginBottom: 120,
@@ -49,27 +49,24 @@ const styles = StyleSheet.create({
   link: {
     fontSize: 42,
     color: 'white',
-    fontWeight:'bold',
+    fontWeight: 'bold',
     textAlign: 'center',
     textDecorationLine: 'underline',
     backgroundColor: 'rgba(0, 0, 0, 0.5)',
     padding: 4,
   },
-  button:{
+  button: {
     height: 60,
     borderRadius: 20,
-    backgroundColor: 'rgba(0, 0, 0, 0.75)',
+    backgroundColor: 'rgba(0, 0, 0, 0.21)',
     padding: 6,
     justifyContent: 'center',
   },
   buttonText: {
     fontSize: 16,
-    color: 'white',
-    fontWeight:'bold',
+    color: 'red',
+    fontWeight: 'bold',
     textAlign: 'center',
-   
     padding: 4,
-  }
-
-
-})
+  },
+});
