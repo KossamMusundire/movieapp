@@ -1,3 +1,6 @@
+
+
+
 import { Tabs } from 'expo-router';
 import React from 'react';
 
@@ -14,7 +17,7 @@ export default function TabLayout() {
         tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
         tabBarInactiveTintColor: Colors[colorScheme ?? 'light'].tint,
         headerShown: false,
-        // headerTitleAlign: "center",
+        headerTitleAlign: "center",
       }}>
       <Tabs.Screen
         name="index"
