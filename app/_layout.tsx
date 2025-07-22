@@ -30,9 +30,10 @@ export default function RootLayout({children}: PropsWithChildren) {
     
       <Stack screenOptions={{ headerStyle: { backgroundColor: theme.background }, headerTintColor: theme.text, headerShadowVisible:false }}>
         <Stack.Screen name="index" options={{ headerShown: false , title:`Home` }}/>
-       < Stack.Screen name="Contact" options={{ headerShown: true , title:`ContactUs` }}/>
+       < Stack.Screen name="Contact" options={{ headerShown: true , title:`Contact`,headerTitle:`Contact Us` }}/>
+         < Stack.Screen name="Menu" options={{ headerShown: true , title:`Menu`,headerTitle:`Coffee Shop Menu` }}/>
 
-        <Stack.Screen name ="+not-found"/>
+        <Stack.Screen name ="+not-found" options= {{headerShown:false}}/>
       </Stack>
     
   );
