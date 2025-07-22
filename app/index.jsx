@@ -10,12 +10,20 @@ const app = () => {
     <View style={styles.container}>
     <ImageBackground source={icedCoffeeImg}
     resizeMode='cover' style={styles.image}>
+
       <Text style ={styles.title}>Coffee Shop</Text>
 
-      <Link href="/contact" style={{marginHorizontal:`auto`}} 
+      <Link href="/contact" style={{marginHorizontal: 'auto'}} 
       asChild>
         <Pressable style={styles.button}>
-          <Text styles ={styles.buttonText}>Contact Us</Text></Pressable>
+          <Text style ={styles.buttonText}>Contact Us</Text></Pressable>
+      
+        </Link>
+
+      <Link href="/menu" style={{marginHorizontal: 'auto'}} 
+      asChild>
+        <Pressable style={styles.button}>
+          <Text style ={styles.buttonText}>Menu</Text></Pressable>
       
         </Link>
 
@@ -39,11 +47,11 @@ const styles = StyleSheet.create({
     resizeMode: 'cover',
   },
   title: {
-    fontSize: 42,
     color: 'white',
+    fontSize: 42,
     fontWeight: 'bold',
     textAlign: 'center',
-    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    backgroundColor: 'rgba(0,0,0,0.5)',
     marginBottom: 120,
   },
   link: {
@@ -63,8 +71,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   buttonText: {
+    color: 'white',
     fontSize: 16,
-    color: 'red',
     fontWeight: 'bold',
     textAlign: 'center',
     padding: 4,
